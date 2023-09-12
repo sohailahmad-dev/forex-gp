@@ -11,8 +11,8 @@ import image4 from '../../assets/img/image4.png'
 import image5 from '../../assets/img/image5.png'
 import Group320 from '../../assets/img/Group320.png'
 import Group326 from '../../assets/img/Group326.png'
-import Image2 from '../../assets/img/Image2.png'
-import Image3 from '../../assets/img/Image3.png'
+import image2 from '../../assets/img/image2.png'
+import image3 from '../../assets/img/image3.png'
 import Slider from '../../components/slider/Slider'
 
 
@@ -79,7 +79,7 @@ export default function Home() {
                                         <div className="home-sec3-item1-blueDiv"></div>
                                         <img src={card} alt="card" className="home-sec3-item1-img1" />
                                         <img src={Group323} alt="Group323" className="home-sec3-item1-img2" />
-                                        <img src={image4} alt="Image4" className="home-sec3-item1-img3" />
+                                        <img src={image4} alt="image4" className="home-sec3-item1-img3" />
                                     </div>
                                 </Grid>
                             </Grid>
@@ -106,7 +106,7 @@ export default function Home() {
                                     <div className="home-sec3-item2-imgs">
                                         <div className="home-sec3-item2-blueDiv"><div /></div>
                                         <img src={Group320} alt="Group320" className="home-sec3-item2-img1" />
-                                        <img src={image5} alt="Image5" className="home-sec3-item2-img2" />
+                                        <img src={image5} alt="image5" className="home-sec3-item2-img2" />
                                     </div>
                                 </Grid>
                             </Grid>
@@ -132,8 +132,8 @@ export default function Home() {
                                     <div className="home-sec3-item3-imgs">
                                         <div className="home-sec3-item3-grayDiv"><div /></div>
                                         <img src={Group326} alt="Group326" className="home-sec3-item3-img1" />
-                                        <img src={Image2} alt="Image2" className="home-sec3-item3-img2" />
-                                        <img src={Image3} alt="Image3" className="home-sec3-item3-img3" />
+                                        <img src={image2} alt="image2" className="home-sec3-item3-img2" />
+                                        <img src={image3} alt="image3" className="home-sec3-item3-img3" />
                                     </div>
                                 </Grid>
                             </Grid>
