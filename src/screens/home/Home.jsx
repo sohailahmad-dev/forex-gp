@@ -7,8 +7,8 @@ import { Grid } from '@mui/material'
 import Btn from '../../components/btn/Btn'
 import card from '../../assets/img/card.png'
 import Group323 from '../../assets/img/Group323.png'
-import Image4 from '../../assets/img/Image4.png'
-import Image5 from '../../assets/img/Image5.png'
+import image4 from '../../assets/img/image4.png'
+import image5 from '../../assets/img/image5.png'
 import Group320 from '../../assets/img/Group320.png'
 import Group326 from '../../assets/img/Group326.png'
 import Image2 from '../../assets/img/Image2.png'
@@ -79,7 +79,7 @@ export default function Home() {
                                         <div className="home-sec3-item1-blueDiv"></div>
                                         <img src={card} alt="card" className="home-sec3-item1-img1" />
                                         <img src={Group323} alt="Group323" className="home-sec3-item1-img2" />
-                                        <img src={Image4} alt="Image4" className="home-sec3-item1-img3" />
+                                        <img src={image4} alt="Image4" className="home-sec3-item1-img3" />
                                     </div>
                                 </Grid>
                             </Grid>
@@ -106,7 +106,7 @@ export default function Home() {
                                     <div className="home-sec3-item2-imgs">
                                         <div className="home-sec3-item2-blueDiv"><div /></div>
                                         <img src={Group320} alt="Group320" className="home-sec3-item2-img1" />
-                                        <img src={Image5} alt="Image5" className="home-sec3-item2-img2" />
+                                        <img src={image5} alt="Image5" className="home-sec3-item2-img2" />
                                     </div>
                                 </Grid>
                             </Grid>
