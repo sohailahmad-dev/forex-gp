@@ -1,0 +1,48 @@
+.signUpBox{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 5%;
+}
+
+.bgImg{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: -999;
+}
+
+.logoImg{
+    width: 100px;
+    height: 100px;
+}
+
+.subTextSignUp{
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.accountSignUp{
+    color: #828282;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.accountSignUp span{
+    cursor: pointer;
+    color: #201D1D;
+}
+
+.accountSignUp span:hover{
+    font-weight: bold;
+}
+
+

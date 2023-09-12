@@ -1,0 +1,116 @@
+.sliderStyle{
+    height: 597px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slideStyle{
+    position: relative;
+}
+
+.slide-leftImg{
+    height: 868px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+
+.slide-centerImg{
+    width: 850px;
+    height: 610px;
+    position: absolute;
+    left: 440px;
+    top: 40px;
+    z-index: 5;
+}
+
+.slide-rightImg{
+    width: 90%;
+    height: 597px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.slide-content{
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    z-index: 4;
+    width: 440px;
+    max-width: 40%;
+}
+
+.slide-heading{
+    font-size: 35px;
+    font-family: Ubuntu-Medium;
+    line-height: 50px;
+}
+
+.slide-heading span{
+    text-decoration: none;
+    color: #FF4A44;
+    font-family: Ubuntu-Medium;
+}
+
+.slide-text{
+    color: #A9A9AB;
+    font-size: 17px;
+    margin:  20px 0px;
+}
+
+.slide-btns{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.slide-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 245px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 8px 0px;
+    background-color: #FF4A44;
+    color: white;
+    outline: none;
+    border: none;
+    font-family: Ubuntu-Bold;
+    font-size: 18px;
+}
+
+.slide-link{
+    font-family: Ubuntu-Bold;
+    font-size: 17px;
+    color: #474747;
+    cursor: pointer;
+}
+
+@media (max-width:699px){
+    .sliderStyle{
+        height: 250px;
+        width: 100%;
+    }
+
+   .slide-leftImg{
+    display: none;
+   } 
+   .slide-rightImg{
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.slide-content{
+    display: none;
+}
+}
