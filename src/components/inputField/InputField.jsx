@@ -22,7 +22,9 @@ export default function InputField({ icon, placeholder, isPassword, onChange }) 
                 <img className='iconMain' src={icon} />
                 <input onChange={onChange} placeholder={placeholder} type={type} />
             </div>
-            {isPassword && <img onClick={handleType} className='iconMain' src={hideIcon} />}
+            {isPassword && <img onClick={handleType} style={{ cursor: 'pointer' }} className='iconMain' src={hideIcon} />}
         </div>
     )
 }
+
+// https://sale-push-website.vercel.app/stats

@@ -14,7 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin: 25px 0px;
 }
 
 .home-sec2-decoration div{
@@ -82,6 +82,11 @@
     color: #777777;
 }
 
+.home-sec3-link:hover{
+    color: black;
+    transition: 0.5s ease;
+}
+
 .home-sec3-link-active{
     cursor: pointer;
     padding-bottom: 19px;
@@ -124,9 +129,6 @@
     align-items: center;
 }
 
-.home-sec3-item1-btn:hover{
-    opacity: 0.9;
-}
 
 .home-sec3-item1-link{
     font-family: Ubuntu-Regular;
@@ -135,6 +137,18 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+.home-sec3-item1-btn:hover{
+    border: 2px solid #2B47C1;
+    transition: 0.5s ease;
+    
+}
+
+.home-sec3-item1-link:hover{
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
 
 .home-sec3-item1-lowerText{
     font-family: Ubuntu-Regular;
@@ -198,7 +212,7 @@
     font-size: 17px;
     color: #1ACFF0;
     border-radius: 20px;
-    border: 1px solid #98EEFE;
+    border: 2px solid #98EEFE;
     width: 165px;
     height: 41px;
     background: transparent;
@@ -208,16 +222,23 @@
     align-items: center;
 }
 
-.home-sec3-item2-btn:hover{
-    opacity: 0.9;
-}
-
 .home-sec3-item2-link{
     font-family: Sarabun-Regular;
     font-size: 17px;
     color: #000000;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.home-sec3-item2-btn:hover{
+    border: 4px solid #98EEFE;
+    transition: 0.5s ease;
+    
+}
+
+.home-sec3-item2-link:hover{
+    font-weight: bold;
+    transition: 0.5s ease;
 }
 
 .home-sec3-item2-lowerText{
@@ -287,6 +308,13 @@
     justify-content: center;
     align-items: center;
 }
+
+.home-sec3-item3-btn:hover{
+    border: 2px solid #8BD2BD;
+    transition: 0.5s ease;
+    
+}
+
 
 .home-sec3-item3-imgs{
     position: relative;

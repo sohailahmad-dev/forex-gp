@@ -32,17 +32,22 @@ import icon22 from '../../assets/img/icon22.png'
 
 
 
-export default function NavBar() {
+export default function NavBar({ active }) {
     let [menu, setMenu] = useState('true');
     let [activeMenu, setActiveMenu] = useState('navLinks');
     let [openLiveSignal, setOpenLiveSignal] = useState(false);
     let [openGBPLinks, setOpenGBPLinks] = useState(false);
+    let [activeLink, setActiveLink] = useState('')
 
     const navigate = useNavigate();
 
     useEffect(() => {
         menu ? setActiveMenu('navLinks') : setActiveMenu("navLinks active")
     }, [menu])
+
+    useEffect(() => {
+        setActiveLink(active)
+    }, [])
 
     const handleLiveSignalLinks = () => {
         setOpenLiveSignal(false)
@@ -59,7 +64,7 @@ export default function NavBar() {
                     style: {
                         position: 'absolute',
                         top: '18px',
-                        left: '40%',
+                        left: '48%',
                         width: '200px',
                         padding: '0px 25px'
                     },
@@ -126,7 +131,7 @@ export default function NavBar() {
                     style: {
                         position: 'absolute',
                         top: '18px',
-                        left: '30%',
+                        left: '35%',
                         width: '570px',
                         padding: '0px 20px'
                     },
@@ -230,11 +235,28 @@ export default function NavBar() {
 
                 <div>
                     <div className={activeMenu}>
-                        <div onClick={() => navigate('/About')} className="link-nb" >About Us</div>
-                        <div className="link-nb1" onClick={() => setOpenLiveSignal(!openLiveSignal)} > Live Signal Account  <KeyboardArrowDownIcon fontSize="small" /> </div>
-                        <div className="link-nb1" onClick={() => setOpenGBPLinks(!openGBPLinks)} > GBP/USD <KeyboardArrowDownIcon fontSize="small" /> </div>
-                        <div className="link-nb">Join Trade</div>
-                        <Btn className='btn' label="Trader Area" />
+                        <div
+                            className={activeLink === 'About Us' ? "link-nb" : "link-nb1"}
+                            onClick={() => {
+                                navigate('/About')
+                            }
+                            }
+                        >About Us</div>
+                        <div
+                            className="link-nb1"
+                            onClick={() => {
+                                setOpenLiveSignal(!openLiveSignal)
+                            }} > Live Signal Account  <KeyboardArrowDownIcon fontSize="small" /> </div>
+                        <div
+                            className="link-nb1"
+                            onClick={() => {
+                                setOpenGBPLinks(!openGBPLinks)
+                            }} > GBP/USD <KeyboardArrowDownIcon fontSize="small" /> </div>
+                        <div
+                            className="link-nb"
+                            onClick={() => navigate('/SignIn')} >Join Trade</div>
+                        <Btn
+                            className='btn' label="Trader Area" />
                         <img src={FAQ} className="faq-nb" />
                     </div>
                     <div className="icon">

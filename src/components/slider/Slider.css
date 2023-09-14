@@ -92,6 +92,13 @@
     cursor: pointer;
 }
 
+.slide-link:hover{
+    /* color: #FF4A44; */
+    border-bottom: 2px solid #474747;
+    transition: 0.5s ease;
+}
+
+
 @media (max-width:699px){
     .sliderStyle{
         height: 250px;

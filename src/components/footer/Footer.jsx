@@ -13,13 +13,13 @@ export default function Footer({ bgColor = '#F7F7FF' }) {
                 <Grid item sm={4}>
                     <div className='footer-sec1'>
                         <img src={logo} className='footer-logo' />
-                        <div className="footer-text">Find Us On</div>
+                        <div className="footer-text1">Find Us On</div>
                         <div className="social-media-links">
                             <img src={facebook} />
                             <img src={twitter} />
                             <img src={youtube} />
                         </div>
-                        <div className="footer-text">Download our app from the stores</div>
+                        <div className="footer-text1">Download our app from the stores</div>
                     </div>
                 </Grid>
                 <Grid item sm={3}>

@@ -39,6 +39,12 @@
     cursor: pointer;
 }
 
+.link-nb:hover{
+    color: #FF4A44;
+    transition: 0.5s ease;
+}
+
+
 .link-nb1{
     display: flex;
     align-items: center;
@@ -46,6 +52,11 @@
     font-size: 16px;
     color: #313132;
     cursor: pointer;
+}
+
+.link-nb1:hover{
+    color: #FF4A44;
+    transition: 0.5s ease;
 }
 
 

@@ -28,7 +28,6 @@ export default function Home() {
                     <div className="home-sec2-heading">Secure Growth, Remarkable Achievements: Start Small, Earn Big</div>
                     <div className="home-sec2-decoration">
                         <div />
-                        <img src={Group311} />
                     </div>
                     <div className="home-sec2-text">
                         Unveil the power of a pound trading plan and experience the  efficiency of single pair trading, all conveniently accessible in a single  place. Elevate your trading journey with us today

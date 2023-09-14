@@ -61,7 +61,7 @@ export default function About() {
     ]
     return (
         <div>
-            <NavBar />
+            <NavBar active='About Us' />
             {/* main Content  */}
             <section>
                 <div className='about-hero' >Who We Are</div>

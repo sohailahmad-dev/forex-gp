@@ -4,12 +4,25 @@
     padding-top: 30px;
 }
 
+.footer-text1{
+    font-size: 16px;
+    font-family: Ubuntu-Regular;
+    color: #7B7B7B;
+    line-height: 28px;
+}
+
 .footer-text{
     font-size: 16px;
     font-family: Ubuntu-Regular;
     color: #7B7B7B;
     line-height: 28px;
     cursor: pointer;
+}
+
+.footer-text:hover{
+    color: black;
+    text-decoration: underline;
+    transition: 0.5s ease;
 }
 
 .footer-heading{
@@ -37,6 +50,13 @@
     margin-right: 7px;
 }
 
+.social-media-links img:hover{
+    width: 45px;
+    transition: 0.5s ease-in-out;
+}
+
+
+
 .footer-link1{
     font-family: Ubuntu-Medium;
     text-decoration: underline;
@@ -44,7 +64,13 @@
     color: #2B72C2;
     margin-top: 15px;
     line-height: 22px;
+    cursor: pointer;
 }
+
+.footer-link1:hover{
+    font-weight: bold;
+}
+
 
 .footer-text2{
     color: #7B7B7B;
@@ -57,6 +83,11 @@
     text-decoration: underline;
     cursor: pointer;
 }
+
+.footer-text2 div:hover{
+    font-weight: bold;
+}
+
 
 .footer-sec5{
     font-size: 15px;
@@ -71,6 +102,11 @@
     color: #FF4A44;
     cursor: pointer;
 }
+
+.footer-sec5 span:hover{
+    font-weight: bold;
+}
+
 
 @media (max-width: 699px ){
     .footer-text, .footer-text2, .footer-link1, .footer-sec5{
