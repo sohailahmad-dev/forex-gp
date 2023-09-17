@@ -13,56 +13,61 @@
   src: url('/font/Poppins/Poppins-SemiBold.ttf');
 }
 
- @font-face {
+@font-face {
+  font-family: Sarabun-Regular;
+  src: url('/font/Sarabun/Sarabun-Regular.ttf');
+}
+
+@font-face {
   font-family: Sarabun;
   src: url('/font/Sarabun/Sarabun-Regular.ttf');
- }
+}
 
- @font-face {
+@font-face {
   font-family: Sarabun-Medium;
   src: url('/font/Sarabun/Sarabun-Medium.ttf');
- }
+}
 
- @font-face {
+@font-face {
   font-family: Sarabun-SemiBold;
   src: url('/font/Sarabun/Sarabun-SemiBold.ttf');
- }
+}
 
- @font-face {
+@font-face {
   font-family: Sarabun-Bold;
   src: url('/font/Sarabun/Sarabun-Bold.ttf');
- }
+}
 
- @font-face {
+@font-face {
   font-family: Saira;
   src: url('/font/Saira_Stencil_One/SairaStencilOne-Regular.ttf');
- }
+}
 
- @font-face {
+@font-face {
   font-family: DM-Sans;
   src: url('/font/DM_Sans/DMSans-VariableFont_opsz\,wght.ttf');
- }
+}
 
- @font-face {
+@font-face {
   font-family: Ubuntu-Regular;
   src: url('/font/Ubuntu/Ubuntu-Regular.ttf');
- }
+}
 
- @font-face {
+@font-face {
   font-family: Ubuntu-Bold;
   src: url('/font/Ubuntu/Ubuntu-Bold.ttf');
- }
+}
 
- @font-face {
+@font-face {
   font-family: Ubuntu-Medium;
   src: url('/font/Ubuntu/Ubuntu-Medium.ttf');
- }
+}
 
- /* styling  */
+/* styling  */
 
 
 
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -71,26 +76,26 @@
   user-select: none;
 }
 
-body{
+body {
   background-color: #F7F7FF;
 }
 
-.welcomeHeading{
+.welcomeHeading {
   font-family: Poppins;
   font-size: 26px;
   margin: 20px 0px;
 }
 
-.text1{
+.text1 {
   font-size: 17px;
 }
 
-.heading{
+.heading {
   font-size: 40px;
   font-style: Sarabun-Semibold;
 }
 
-.btn{
+.btn {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -103,35 +108,34 @@ body{
   font-size: 17px;
   padding: 0px 20px;
   font-weight: bold;
-  
+
 }
 
-.btn:hover{
+.btn:hover {
   opacity: 0.8;
   transition: 0.5s ease;
 }
 
 /* margins  */
 
-.mb5{
+.mb5 {
   margin-bottom: 5px;
 }
 
-.mb10{
+.mb10 {
   margin-bottom: 10px;
 }
 
-.mb20{
+.mb20 {
   margin-bottom: 20px;
 }
 
-.mb30{
+.mb30 {
   margin-bottom: 30px;
 }
 
-@media (max-width: 699px ){
-  *{
+@media (max-width: 699px) {
+  * {
     font-size: 14px;
   }
 }
-
