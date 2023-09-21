@@ -274,6 +274,7 @@ export default function FeatureManagement() {
             // On autofill we get a stringified value.
             typeof value === 'string' ? value.split(',') : value,
         );
+
     };
 
 
@@ -333,7 +334,7 @@ export default function FeatureManagement() {
         setIsLoading(true)
         const rolesObj = {
             featureId: idForRoles,
-            rolesIds: rolesName
+            roleIds: rolesName
         }
         if (idForRoles && rolesName) {
             // api call 
@@ -425,19 +426,19 @@ export default function FeatureManagement() {
                 </div>
                 <div className="table-data-headings-Box">
                     <Grid container spacing={3}>
-                        <Grid item sm={2.5}>
-                            <div className="table-data-heading">
-                                Feature ID
-                            </div>
-                        </Grid>
                         <Grid item sm={2}>
                             <div className="table-data-heading">
                                 Name
                             </div>
                         </Grid>
-                        <Grid item sm={4.5}>
+                        <Grid item sm={4}>
                             <div className="table-data-heading">
                                 Description
+                            </div>
+                        </Grid>
+                        <Grid item sm={3}>
+                            <div className="table-data-heading">
+                                Allowed Roles
                             </div>
                         </Grid>
                         <Grid item sm={3}>
@@ -449,26 +450,28 @@ export default function FeatureManagement() {
                 </div>
                 <div className="table-data-content-box">
                     {features && features.length > 0 &&
-                        features.map((item, index) => {
+                        features.map((item) => {
                             return (
                                 <div key={item?._id} className="table-data-content-item">
                                     <Grid container spacing={3}>
-                                        <Grid item sm={2.5} xs={12}>
-                                            <div className="table-data-item-text">
-                                                <span>Feature ID: </span>
-                                                {item?._id}
-                                            </div>
-                                        </Grid>
                                         <Grid item sm={2} xs={12}>
                                             <div className="table-data-item-text">
                                                 <span>Name: </span>
                                                 {item?.name}
                                             </div>
                                         </Grid>
-                                        <Grid item sm={4.5} xs={12}>
+                                        <Grid item sm={4} xs={12}>
                                             <div className="table-data-item-text">
                                                 <span>Description: </span>
                                                 {item?.description}
+                                            </div>
+                                        </Grid>
+                                        <Grid item sm={3} xs={12}>
+                                            <div className="table-data-item-text">
+                                                <span>Allowed Roles: </span>
+                                                {item?.role && item?.role.length > 0 &&
+                                                    item?.role.map((e) => `${e.name}, `)
+                                                }
                                             </div>
                                         </Grid>
                                         <Grid item sm={3} xs={12}>
