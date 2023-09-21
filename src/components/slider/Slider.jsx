@@ -6,6 +6,8 @@ import rectangle from '../../assets/img/rectangle.png'
 import image1 from '../../assets/img/image1.png'
 import Btn from '../btn/Btn'
 import './Slider.css';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export default function Slider() {
 
@@ -17,10 +19,26 @@ export default function Slider() {
     }
 
     useEffect(() => {
-        let interval = setInterval(changeSlide, 3000);
+        let interval = setInterval(changeSlide, 5000);
 
         return () => clearInterval(interval);
     })
+
+    const handlePreviousSlide = () => {
+        if (currentSlide === 1) {
+            setCurrentSlide(slides)
+        } else {
+            setCurrentSlide(currentSlide - 1)
+        }
+    }
+
+    const handleNextSlide = () => {
+        if (currentSlide === slides) {
+            setCurrentSlide(1)
+        } else {
+            setCurrentSlide(currentSlide + 1)
+        }
+    }
 
 
     return (
@@ -39,6 +57,21 @@ export default function Slider() {
                             <div className="slide-link">Read More</div>
                         </div>
                     </div>
+                    <div className="slider-arrows">
+                        <div onClick={handlePreviousSlide} className='slider-arrow-left'>
+                            <ArrowBackIosIcon fontSize='large' />
+                        </div>
+                        <div onClick={handleNextSlide} className='slider-arrow-right'>
+                            <ArrowForwardIosIcon fontSize='large' />
+                        </div>
+                    </div>
+                    {/* <div className="slider-bubbles-box">
+                        <div className='slider-bubble'>We<div className='slider-bubble-active' /></div>
+                        <div className='slider-bubble'><div className='slider-bubble-active' /></div>
+                        <div className='slider-bubble'><div className='slider-bubble-active' /></div>
+                    </div> */}
+
+
                 </div>}
                 {currentSlide === 2 && <div className='slideStyle' >
                     <img src={rectangle} className='slide-leftImg' />
@@ -52,6 +85,15 @@ export default function Slider() {
                         <div className="slide-btns">
                             <Btn label='Join Trade' className='slide-btn' />
                             <div className="slide-link">Read More</div>
+                        </div>
+
+                    </div>
+                    <div className="slider-arrows">
+                        <div onClick={handlePreviousSlide} className='slider-arrow-left'>
+                            <ArrowBackIosIcon fontSize='large' />
+                        </div>
+                        <div onClick={handleNextSlide} className='slider-arrow-right'>
+                            <ArrowForwardIosIcon fontSize='large' />
                         </div>
                     </div>
                 </div>}
@@ -67,6 +109,14 @@ export default function Slider() {
                         <div className="slide-btns">
                             <Btn label='Copy Now' className='slide-btn' />
                             <div className="slide-link">Read More</div>
+                        </div>
+                    </div>
+                    <div className="slider-arrows">
+                        <div onClick={handlePreviousSlide} className='slider-arrow-left'>
+                            <ArrowBackIosIcon fontSize='large' />
+                        </div>
+                        <div onClick={handleNextSlide} className='slider-arrow-right'>
+                            <ArrowForwardIosIcon fontSize='large' />
                         </div>
                     </div>
                 </div>}

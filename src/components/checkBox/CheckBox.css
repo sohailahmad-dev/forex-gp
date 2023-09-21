@@ -1,4 +1,4 @@
-.mainCheckBox{
+.mainCheckBox {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -10,18 +10,18 @@
     margin-bottom: 3px;
 }
 
-span{
+span {
     color: black;
     text-decoration: underline;
 }
 
-.icon{
+.cb-icon {
     width: 15px;
     height: 15px;
 }
 
 @media (max-width: 699px) {
-    .mainCheckBox{
+    .mainCheckBox {
         margin-bottom: 10px;
     }
 }

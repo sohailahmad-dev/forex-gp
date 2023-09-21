@@ -5,14 +5,13 @@ import SignIn from '../screens/signIn/SignIn'
 import SignUp from '../screens/signUp/SignUp'
 import About from '../screens/about/About';
 import AdminPanel from '../screens/adminPanel/AdminPanel';
+import MemberPanel from '../screens/memberPanel/MemberPanel';
 
 
 
 
 
 export default function AppRouter() {
-
-
     return (
         <>
             <BrowserRouter>
@@ -22,9 +21,9 @@ export default function AppRouter() {
                     <Route path='/SignUp' element={<SignUp />}></Route>
                     <Route path='/About' element={<About />}></Route>
                     <Route path='AdminPanel/*' element={<AdminPanel />}></Route>
+                    <Route path='MemberPanel/*' element={<MemberPanel />}></Route>
                 </Routes>
             </BrowserRouter>
         </>
-
     )
 }

@@ -1,33 +1,28 @@
 import React, { useEffect, useState } from 'react';
-import './AdminPanel.css'
+import '../adminPanel/AdminPanel.css'
 import MenuIcon from '@mui/icons-material/Menu';
 import Logo from '../../assets/img/logo.png'
 import avatar from '../../assets/img/avatar.png'
 import dashboard from '../../assets/img/dashboard.png'
 import dashboardActive from '../../assets/img/dashboardActive.png'
-import edit from '../../assets/img/edit.png'
-import editActive from '../../assets/img/editActive.png'
-import user from '../../assets/img/user.png'
-import userActive from '../../assets/img/userActive.png'
+import insta1 from '../../assets/img/insta1.png'
+import insta1Active from '../../assets/img/insta1Active.png'
 import setting from '../../assets/img/setting.png'
 import info from '../../assets/img/info.png'
 import search from '../../assets/img/search.png'
 import msg from '../../assets/img/msg.png'
 import bellIcon from '../../assets/img/bellIcon.png'
 import { Route, Routes, useNavigate } from 'react-router-dom';
-import Dashboard from '../adminPanelScreens/dashboard/Dashboard';
-import UserManagement from '../adminPanelScreens/userManagement/UserManagement';
-import RoleManagement from '../adminPanelScreens/roleManagement/RoleManagement';
-import FeatureManagement from '../adminPanelScreens/featureManagement/FeatureManagement';
 import { getData } from '../../config/apiCalls';
 import Snack from '../../components/snack/Snack';
 import Loader from '../../components/loader/Loader';
+import Dashboard1 from '../memberPanelScreens/dashboard-mp/Dashboard1';
 
 
 
 
 
-export default function AdminPanel() {
+export default function MemberPanel() {
     const [deviceType, setDeviceType] = useState('');
     let [menu, setMenu] = useState(false);
     let [activeMenu, setActiveMenu] = useState('ap-navLinks ap-activeMenu');
@@ -68,27 +63,11 @@ export default function AdminPanel() {
 
         },
         {
-            label: 'User Management',
-            icon: user,
-            activeIcon: userActive,
-            to: 'UserManagement',
-            iconWidth: '12px',
-            iconHeight: '18px',
-        },
-        {
-            label: 'Roles Management',
-            icon: edit,
-            activeIcon: editActive,
-            to: 'RoleManagement',
-            iconWidth: '17px',
-            iconHeight: '17px',
-        },
-        {
-            label: 'Feature Management',
-            icon: edit,
-            activeIcon: editActive,
-            to: 'FeatureManagement',
-            iconWidth: '17px',
+            label: 'InstaForex Account',
+            icon: insta1,
+            activeIcon: insta1Active,
+            to: 'Dashboard',
+            iconWidth: '19px',
             iconHeight: '17px',
         },
 
@@ -134,7 +113,7 @@ export default function AdminPanel() {
     }, []);
 
     useEffect(() => {
-        navigate('Dashboard')
+        navigate('Dashboard1')
     }, [])
 
     const handleLogout = () => {
@@ -233,7 +212,7 @@ export default function AdminPanel() {
                                     </div>
                                     <div className="ap-header-profile-left-text">
                                         <div className="ap-header-profile-left-text-name">{userData?.firstname + " " + userData?.lastname}</div>
-                                        <div className="ap-header-profile-left-text-role">{userData?.role?.name ?? 'Role'}</div>
+                                        <div className="ap-header-profile-left-text-role">{userData?.role?.slice(0, 15) ?? 'Role'}</div>
                                     </div>
                                 </div>
                                 <div className="ap-header-profile-right">
@@ -248,10 +227,7 @@ export default function AdminPanel() {
                     </div>
 
                     <Routes>
-                        <Route path='Dashboard' element={<Dashboard />}></Route>
-                        <Route path='UserManagement' element={<UserManagement />}></Route>
-                        <Route path='RoleManagement' element={<RoleManagement />}></Route>
-                        <Route path='FeatureManagement' element={<FeatureManagement />}></Route>
+                        <Route path='Dashboard1' element={<Dashboard1 />}></Route>
                     </Routes>
                 </div>
 

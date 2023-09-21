@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './InputField.css'
 import hideIcon from '../../assets/img/hideIcon.png'
 
-export default function InputField({ icon, placeholder, isPassword, onChange }) {
+export default function InputField({ icon, placeholder, isPassword, onChange, value }) {
 
     let [type, setType] = useState('text')
 
@@ -20,7 +20,7 @@ export default function InputField({ icon, placeholder, isPassword, onChange }) 
         <div className='inputBox' >
             <div className='leftBox' >
                 <img className='iconMain' src={icon} />
-                <input onChange={onChange} placeholder={placeholder} type={type} />
+                <input onChange={onChange} value={value} placeholder={placeholder} type={type} />
             </div>
             {isPassword && <img onClick={handleType} style={{ cursor: 'pointer' }} className='iconMain' src={hideIcon} />}
         </div>

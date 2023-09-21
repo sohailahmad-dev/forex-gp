@@ -257,7 +257,7 @@ export default function NavBar({ active }) {
                             onClick={() => navigate('/SignIn')} >Join Trade</div>
                         <Btn
                             className='btn' label="Trader Area" />
-                        <img onClick={() => navigate('/AdminPanel')} src={FAQ} className="faq-nb" />
+                        <img src={FAQ} className="faq-nb" />
                     </div>
                     <div className="icon">
                         {menu ? <MenuIcon onClick={() => setMenu(!menu)} /> : <CloseIcon onClick={() => setMenu(!menu)} />}

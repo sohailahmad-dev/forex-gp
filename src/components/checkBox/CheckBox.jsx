@@ -15,8 +15,8 @@ export default function CheckBox({ defaultValue = false, children, onChange }) {
     return (
         <div onClick={handleValue} className='mainCheckBox' >
             {checked ?
-                <img src={checkedIcon} className='icon' /> :
-                <img src={uncheckedIcon} className='icon' />
+                <img src={checkedIcon} className='cb-icon' /> :
+                <img src={uncheckedIcon} className='cb-icon' />
             }
             <span>{children}</span>
 
